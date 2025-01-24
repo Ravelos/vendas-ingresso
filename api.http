@@ -1,0 +1,52 @@
+POST https://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "user@dev-vendas.com",
+    "password": "secret"
+}
+
+###
+POST https://localhost:3000/partners
+Content-Type: application/json
+
+{
+    "name": "William Perez",
+    "email": "william@partner.com",
+    "password": "secret",
+    "company_name": "partners"
+}
+
+###
+POST https://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "name": "William Customer",
+    "email": "william@customer.com",
+    "password": "secret",
+    "address": "mi casa, sp.",
+    "phone": "087737364"
+}
+
+###
+GET https://localhost:3000/events
+Content-Type: application/json
+
+{
+   "name": "Rock concert",
+   "description": "Concierto",
+   "date": "2025-02-31",
+   "location":"Playita"
+}
+
+###
+get https://localhost:3000/events/:eventId
+Content-Type: application/json
+
+{
+   "name": "Rock concert",
+   "description": "Concierto",
+   "date": "2025-02-31",
+   "location":"Playita"
+}
