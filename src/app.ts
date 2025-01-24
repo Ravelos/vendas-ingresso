@@ -22,14 +22,14 @@ app.post("/customers",(req,res) =>{
     const {name, email, password, address, phone} = req.body;
 });
 
-app.post("/events",(req,res) =>{
+app.post("/partners/events",(req,res) =>{
     const {name, description, date, location} = req.body;
 });
 
-app.get("/events",(req,res) =>{
+app.get("/partners/partners/events",(req,res) =>{
 });
 
-app.get("/events/:eventId",(req,res) =>{
+app.get("partners/events/:eventId",(req,res) =>{
     const {eventId} = req.body;
     console.log(eventId);
     res.send();
